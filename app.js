@@ -41,7 +41,7 @@ app.use('/',(res, req ) => {
 });
 
 //start server
-app.listen(server.PORT
+app.listen(process.env.PORT || server.PORT)
 
 //if ()){
   //  console.log(`Node server listen on ${server.PORT}`);
@@ -50,4 +50,4 @@ app.listen(server.PORT
 //else {
     // if error restart server on new port
     //errorHandler.listenHandler(app, server.onErrorPort);
-}
+//}
