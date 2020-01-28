@@ -1,0 +1,19 @@
+{
+  "name": "my-nodejs-blog",
+  "version": "1.0.0",
+  "description": "blog website",
+  "main": "app.js",
+  "scripts": {},
+  "author": "viktor draganov",
+  "license": "ISC",
+  "dependencies": {
+    "clean-css": ">=4.1.11",
+    "constantinople": ">=3.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jade": "^1.11.0",
+    "mongoose": "^5.8.9",
+    "mongoose-type-email": "^1.0.12",
+    "nodemon": "^2.0.2"
+  }
+}

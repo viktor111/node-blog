@@ -1,0 +1,14 @@
+doctype html
+html
+    include ./includes/headers/index.jade
+        title Home
+    body
+        if isAuthenticated
+          include ./includes/top/loggedin.jade
+        else
+          include ./includes/top/top.jade
+          .paralax(id="paralax")
+        .container
+            .main
+              h1 working on Index...
+    include ./includes/bot/bottom.jade

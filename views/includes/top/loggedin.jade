@@ -1,0 +1,18 @@
+.menu-holder
+ ul(class='menu')
+   li
+     a(href='/', class='menu-button') Home
+   li
+     a(href='/articles' , class='menu-button') Articles
+   li
+     a(href='/about' , class='menu-button') About
+   li
+    form(action='/logout', method='POST')
+      button(type='submit') Logout
+  if isAdmin
+    li
+       form(action='/addArticle', method='POST')
+         button(type='submit',class='admin-btn') Add Article
+    li
+       form(action='/deleteArticle', method='POST')
+         button(type='submit', class='admin-btn') Delete Article
