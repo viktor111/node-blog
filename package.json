@@ -16,6 +16,7 @@
     "express-session": "^1.17.0",
     "jade": "^1.11.0",
     "mongoose": "^5.8.9",
-    "mongoose-type-email": "^1.0.12"
+    "mongoose-type-email": "^1.0.12",
+    "nodemon": "^2.0.2"
   }
 }
