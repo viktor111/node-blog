@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "blog website",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node app.js"
+  },
   "author": "Viktor draganov",
   "license": "ISC",
   "dependencies": {
