@@ -4,7 +4,7 @@
   "description": "blog website",
   "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon app.js"
   },
   "author": "Viktor draganov",
   "license": "ISC",
