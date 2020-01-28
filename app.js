@@ -41,11 +41,13 @@ app.use('/',(res, req ) => {
 });
 
 //start server
-if (app.listen(server.PORT)){
-    console.log(`Node server listen on ${server.PORT}`);
+app.listen(server.PORT
 
-}
-else {
+//if ()){
+  //  console.log(`Node server listen on ${server.PORT}`);
+
+//}
+//else {
     // if error restart server on new port
-    errorHandler.listenHandler(app, server.onErrorPort);
+    //errorHandler.listenHandler(app, server.onErrorPort);
 }
