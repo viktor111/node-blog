@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "blog website",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+    "start": "nodemon app.js",
+  },
   "author": "viktor draganov",
   "license": "ISC",
   "dependencies": {
