@@ -13,7 +13,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://viktor:viktor11@cv-app-sdkha.gcp.mongodb.net/blog?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+mongoose.connect('mongodb+srv://viktor:viktor11@cv-app-sdkha.gcp.mongodb.net/blog?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: false }).then(() => {
   console.log('Connected to database blog mongoose')
 });
 
