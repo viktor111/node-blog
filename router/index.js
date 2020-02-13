@@ -15,5 +15,6 @@ router.get('/login', authController.getLogin);
 router.post('/register', authController.postRegister);
 router.post('/login', authController.postLogin);
 router.post('/logout', authController.postLogout);
+// ToDo ARTICLE
 
 module.exports = router;

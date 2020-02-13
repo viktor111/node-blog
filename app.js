@@ -13,9 +13,11 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://viktor:viktor11@cv-app-sdkha.gcp.mongodb.net/blog?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: false }).then(() => {
+mongoose.connect('mongodb://viktor:viktor11@ds151533.mlab.com:51533/heroku_wgktxdw1', {useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
   console.log('Connected to database blog mongoose')
 });
+//mongodb://viktor:viktor11@ds151533.mlab.com:51533/heroku_wgktxdw1
+//mongodb+srv://viktor:viktor11@cv-app-sdkha.gcp.mongodb.net/blog?retryWrites=true&w=majority
 
 // set view engine
 app.set("view engine","jade");
