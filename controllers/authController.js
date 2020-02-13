@@ -35,7 +35,8 @@ function postRegister(req, res, next){
 
 function postLogin (req, res, next){
   const {username, password} = req.body;
-
+  console.console.log(req);
+console.log(res);
     User.findOne({username: username})
     .then(user => {
       if (!user) return res.redirect('/register');
