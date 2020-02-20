@@ -14,7 +14,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 try {
-  mongoose.connect("mongodb+srv://viktor:viktor11@cv-app-sdkha.gcp.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true })
+  mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
       console.log('Connected to database blog mongoose')
   });
