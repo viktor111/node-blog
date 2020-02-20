@@ -35,26 +35,32 @@ function postRegister(req, res, next){
 
 function postLogin (req, res, next){
   const {username, password} = req.body;
-  console.console.log(req);
-console.log(res);
-    User.findOne({username: username})
-    .then(user => {
-      if (!user) return res.redirect('/register');
-      if (user){
-        if (user.admin){
-          req.session.isAdmin = true;
-          console.log('Logged in as admin');
-        }
-        console.log('Logged in as user');
-        req.session.isLoggedIn = true;
-        req.session.user = user;
-        return req.session.save(err => {
-          console.log(err);
-          res.redirect('/');
-        })
+  
+try {
+  User.findOne({username: username})
+  .then(user => {
+    if (!user) return res.redirect('/register');
+    if (user){
+      if (user.admin){
+        req.session.isAdmin = true;
+        console.log('Logged in as admin');
       }
-      res.redirect('/login')
-    })
+      console.log('Logged in as user');
+      req.session.isLoggedIn = true;
+      req.session.user = user;
+      return req.session.save(err => {
+        console.log(err);
+        res.redirect('/');
+      })
+    }
+    res.redirect('/login')
+  })
+} catch (e) {
+
+} finally {
+
+}
+
 }
 
 function postLogout (req, res, next){
